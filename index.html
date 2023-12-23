@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                <a href="">RealState</a>
+            </div>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="toggle" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
+        </nav>
+        <div class="content">
+            <div class="article">
+                <h1>Your Dream House</h1>
+                <p>Make an appointment to see a qualified representative and take a look at your locations right now.</p>
+                <div class="button">
+                    <a href="">Purchase now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            var manuToggle = document.querySelector('.toggle');
+            var ul=document.querySelector('ul');
+            ul.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
